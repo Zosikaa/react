@@ -4,12 +4,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import {MojPierwszykomponent} from './PrzykladJsx'
+import Zadanie from './PropsyPrzyklad'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Zadanie />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />

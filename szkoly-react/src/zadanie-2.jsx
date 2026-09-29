@@ -1,5 +1,4 @@
-function PersonCard({firstName, lastName, age, occupation = "Bez zawodu"}) {
-   //  const {firstName, lastName, age, occupation = "Bez zawodu"} = props;
+export function PersonCard({firstName, lastName, age, occupation = "Bez zawodu"}) {
     return (
         <div>
             <p>Imię: {firstName}</p>
@@ -9,3 +8,4 @@ function PersonCard({firstName, lastName, age, occupation = "Bez zawodu"}) {
         </div>
     );
 }
+

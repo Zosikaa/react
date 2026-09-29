@@ -19,3 +19,14 @@ function ArticleParent() {
         </div>
     );
 }
+
+export default function Zadanie1() {
+    return (
+        <div>
+            <br></br>
+           <p> Zadanie1 </p>
+           <ArticleParent />
+            <br></br>
+        </div>
+    );
+}

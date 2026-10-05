@@ -3,20 +3,46 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-import {MojPierwszykomponent} from './PrzykladJsx'
-import Zadanie from './PropsyPrzyklad'
-import Zadanie1 from './zadanie-1'
-import {PersonCard} from './zadanie-2'
-import {MovieList} from './zadanie-3'
 
+import {MojPierwszykomponent} from './0_PrzykladJsx_przyklad'
+import Zadanie from './0_PropsyPrzyklad_przyklad'
+
+import LicznikObecnosci from './0_Obecnosci_przyklad'
+import FormularzUcznia from './0_Dane_przyklad'
+import ListaUczniow from './0_Uczniowie_przyklad'
+
+import Zadanie1 from './03_zadanie-1'
+import {PersonCard} from './03_zadanie-2'
+import {MovieList} from './03_zadanie-3'
+
+import TrybKoloru from './04_ZmianaKolor'
+import OcenyUcznia from './04_Oceny'
+import ListaObecnosci from './04_SrednieObecnosci'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Zadanie />
-    
+
+    // ZADANIA 04 <br></br> <br></br>
+
+    <TrybKoloru />
+
+    <OcenyUcznia />
+
+    <ListaObecnosci />
+
+    // PRZYKLADY HOOK 04 <br></br> <br></br>
+
+    <LicznikObecnosci />
+
+    <FormularzUcznia  />
+
+    <ListaUczniow />
+
+    // ZADANIA 03 <br></br> <br></br>
+
     <Zadanie1 />
 
     <PersonCard firstName = "Zosia" lastName = "Biel" age = "16" occupation = "Nic"/>
@@ -24,6 +50,12 @@ function App() {
     <MovieList movies={[
       {id: 1, title: "Inception", year: 2010, rating: 8.8},
       {id: 2, title: "Avatar", year: 2009, rating: 8.5}]} />
+
+    // PRZYKLADY 00 <br></br> <br></br>
+
+    <Zadanie />
+    
+    <MojPierwszykomponent />
 
       <section id="center">
         <div className="hero">
@@ -44,8 +76,6 @@ function App() {
         >
           Count is {count}
         </button>
-
-        <MojPierwszykomponent />
 
       </section>
 

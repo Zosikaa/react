@@ -19,11 +19,19 @@ import TrybKoloru from './04_ZmianaKolor'
 import OcenyUcznia from './04_Oceny'
 import ListaObecnosci from './04_SrednieObecnosci'
 
+import PrzykladTablicaPusta from './06_test'
+import ZegarCyfrowy from './06_Zegar'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    // ZADANIA 06 <br></br> <br></br>
+    
+    <ZegarCyfrowy />
+
+    <PrzykladTablicaPusta />
 
     // ZADANIA 04 <br></br> <br></br>
 

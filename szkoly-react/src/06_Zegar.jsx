@@ -8,26 +8,34 @@
 	- Wskazówka: new Date().toLocaleTimeString()
 */
 
+
 import { useState, useEffect } from 'react';
 
+
 function ZegarCyfrowy() {
-	const [czas, setCzas] = useState([])
+	const [czas, setCzas] = useState(new Date().toLocaleTimeString('pl-PL'));
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setSekundy(s => s + 1);
-		}, 1);
+			setCzas(new Date().toLocaleTimeString('pl-PL'));
+		}, 1000);
 
+		return () => {
+			clearInterval(interval);
+		};
+	}, []);
 
-	})
-
-	return (
+		return (
 		<div>
+			<h2>ZEGAR CYFROWY</h2>
 
-			<h1> ZEGAR CYFROWY </h1>
+			<h2>{czas}</h2>
 
+			<br></br>
+			<br></br>
+			<br></br>	
 		</div>
-	)
+	);
 }
 
-export default ZegarCyfrowy
+export default ZegarCyfrowy;

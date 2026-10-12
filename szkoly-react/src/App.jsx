@@ -21,15 +21,32 @@ import ListaObecnosci from './04_SrednieObecnosci'
 
 import PrzykladTablicaPusta from './06_test'
 import ZegarCyfrowy from './06_Zegar'
+import PowitanieZBazy from './06_Baza'
+
+import Przyklad from './07-react-renderowanieWarunkowe-przyklady'
+import PanelLogowania from './07_Szkola'
+import InfoUczen from './07_Info'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    // ZADANIA 07
+
+    <InfoUczen imie="Kasia Nowak" czyObecny={false} numerDziennika={5} />
+
+    <PanelLogowania />  
+
+    // PRZYKLADY 07 
+
+    <Przyklad />
+
     // ZADANIA 06 <br></br> <br></br>
     
     <ZegarCyfrowy />
+
+    <PowitanieZBazy />
 
     <PrzykladTablicaPusta />
 

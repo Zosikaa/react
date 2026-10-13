@@ -19,14 +19,11 @@ function InfoUczen({ imie, czyObecny, numerDziennika }) {
     return (
         <div className = "panel">
             <h2>Obecność</h2>
-
             <p>
                 {numerDziennika}. {imie}
                 {czyObecny && <span> (obecny)</span>}
                 {!czyObecny && <span> (nieobecny)</span>}
             </p>
-        </div>
-    );
-}
+        </div> );}
 
 export default InfoUczen;

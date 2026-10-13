@@ -26,21 +26,36 @@ import PowitanieZBazy from './06_Baza'
 import Przyklad from './07-react-renderowanieWarunkowe-przyklady'
 import PanelLogowania from './07_Szkola'
 import InfoUczen from './07_Info'
+import PrzyciskZapisz from './07_PrzyciskZapis'
+
+import ListaPrzedmiotow from './08_ListaSzkolnych'
+import KartaKlasy from './08_KartaKlasy'
+import DziennikOcen from './08_DziennikOcen'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    // ZADANIA 07
+    // ZADANIA 08 <br></br> <br></br>
 
-    <InfoUczen imie="Kasia Nowak" czyObecny={false} numerDziennika={5} />
+    <DziennikOcen />
 
-    <PanelLogowania />  
+    <KartaKlasy />
+
+    <ListaPrzedmiotow />
+
+    // ZADANIA 07 <br></br> <br></br>
+
+    <PrzyciskZapisz /> <br></br> <br></br>
+ 
+    <InfoUczen imie="Kasia Nowak" czyObecny={false} numerDziennika={5} /> <br></br> <br></br>
+
+    <PanelLogowania />  <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 
     // PRZYKLADY 07 
 
-    <Przyklad />
+    <Przyklad /> 
 
     // ZADANIA 06 <br></br> <br></br>
     

@@ -33,7 +33,7 @@ function DziennikOcen() {
 
     const srednia = przefiltrowaneOceny.length > 0
         ? przefiltrowaneOceny.reduce((suma, ocena) => suma + ocena.ocena, 0)
-            / przefiltrowaneOceny.length
+        / przefiltrowaneOceny.length
         : 0;
 
     return (

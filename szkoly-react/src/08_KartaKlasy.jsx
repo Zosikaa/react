@@ -29,7 +29,7 @@ function KartaKlasy() {
 
 				<thead>	
 					<tr>
-						<th> Nr dziennika </th>	
+						<th> Nr w dzienniku </th>	
 						<th> Imię </th>
 						<th> Nazwisko </th>	
 					</tr>
@@ -44,6 +44,7 @@ function KartaKlasy() {
 						</tr>
 					))}
 				</tbody>
+				
 			</table>	
 		</div>
 	)

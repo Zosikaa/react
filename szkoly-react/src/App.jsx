@@ -32,11 +32,20 @@ import ListaPrzedmiotow from './08_ListaSzkolnych'
 import KartaKlasy from './08_KartaKlasy'
 import DziennikOcen from './08_DziennikOcen'
 
+import { SchoolNameProvider, SchoolHeader } from './09_SzkolnyKontekst'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+    // ZADANIA 09 <br></br> <br></br>
+
+    <SchoolNameProvider>
+      <SchoolHeader />
+    </SchoolNameProvider> <br></br>
+
     // ZADANIA 08 <br></br> <br></br>
 
     <DziennikOcen />

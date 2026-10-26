@@ -34,10 +34,6 @@ function StudentProvider({ children }) {
 	);
 }
 
-
-
-
-
 function StudentInfo() {
 
 	const { student } = useContext(StudentContext);	

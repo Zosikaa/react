@@ -24,61 +24,91 @@ import { createContext, useContext, useState } from 'react';
 const UserContext = createContext(null);
 const GradesContext = createContext(null);
 
-function SystemProvider({ children }) {
+function UserProvider({ children }) {
 
   	const [user] = useState({ name: 'dr Makowski', subject: 'Matematyka' }); 
-	const [grade, SetGrade] = useState([])
 
-  	return (
+	const [grades, setGrades] = useState([]);
 
+	const addGrade = (studentName, grade, addedBy) => {
+		const newGrade = {
+		id: Date.now(),
+		studentName,
+		grade,
+		addedBy,
+		date: new Date().toLocaleString()
+		};
+
+		setGrades([...grades, newGrade]);
+	}
+
+	const deleteGrade = (id) => {
+		setGrades(grades.filter(grade => grade.id !== id));
+	}
+
+	return (
 		<UserContext.Provider value = {user}>
-      		{children}
-    	</UserContext.Provider>
 
-  )
+		<GradesContext.Provider
+			value = {{ grades, addGrade, deleteGrade }}>
+			{children}
+		</GradesContext.Provider>
 
+		</UserContext.Provider>
+	);
 }
 
 function AddGradeForm() {
+  const { grades, addGrade, deleteGrade } = useContext(GradesContext);
 
-	const grade = useContext(GradesContext);
+  return (
+    <div>
 
-	return (
+      <form>
 
-		<div>
+		<input type = "text" placeholder = "Imię ucznia" />
 
-			<form>
+		<select>
+			<option value = "1"> 1 </option>
+			<option value = "2"> 2 </option>
+			<option value = "3"> 3 </option>
+			<option value = "4"> 4 </option>
+			<option value = "5"> 5 </option>	
+			<option value = "6">6 </option>
+		</select>
 
+		<button type = "submit"> Dodaj ocenę </button>
 
+      </form>
 
-			</form>
-
-		</div>
-
-	)
-
-
+    </div>
+  );
 }
 
-function  GradesList() {
-
+function GradesList() {
+  return (
+    <div>
+    </div>
+  );
 }
 
 function TeacherInfo() {
+  const teacher = useContext(UserContext);
 
-	const teacher  = useContext(UserContext);	
-
-	return (
-
-		<div>
-
-			<p> {teacher.name} </p>
-			<p> Przedmiot: {teacher.subject} </p> 
-
-		</div>
-
-	);
-
+  return (
+    <div>
+      <p>{teacher.name}</p>
+      <p>Przedmiot: {teacher.subject}</p>
+    </div>
+  );
 }
 
-export { SystemProvider, TeacherInfo };
+export { UserProvider, TeacherInfo, AddGradeForm, GradesList };
+
+	<UserProvider>
+	  <TeacherInfo />
+	  <AddGradeForm />
+	  <GradesList />
+	</UserProvider>
+
+	import { SystemProvider, TeacherInfo } from './09_SystemKontekst'

@@ -34,7 +34,6 @@ import DziennikOcen from './08_DziennikOcen'
 
 import { SchoolNameProvider, SchoolHeader } from './09_SzkolnyKontekst'
 import { StudentProvider, StudentInfo, ClassChanger } from './09_UczenKontekst'
-import { SystemProvider, TeacherInfo } from './09_SystemKontekst'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,10 +42,6 @@ function App() {
     <>
 
     // ZADANIA 09 <br></br> <br></br>
-
-    <SystemProvider>
-      <TeacherInfo />
-    </SystemProvider>
 
     <StudentProvider>
       <StudentInfo />

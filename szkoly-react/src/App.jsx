@@ -35,13 +35,25 @@ import DziennikOcen from './08_DziennikOcen'
 import { SchoolNameProvider, SchoolHeader } from './09_SzkolnyKontekst'
 import { StudentProvider, StudentInfo, ClassChanger } from './09_UczenKontekst'
 
+import FormularzImienia from './10_FormImienia'
+import SystemZarzadzaniaSzkola from './10_FormDlaSysSzkoly'
+import RejestracjaUcznia from './10_RejestracjaWalidacja'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
 
-    // ZADANIA 09 <br></br> <br></br>
+    // ZADANIA 10 <br></br> <br></br>
+
+    <RejestracjaUcznia /> <br></br> <br></br>
+
+    <SystemZarzadzaniaSzkola /> <br></br> <br></br>
+
+    <FormularzImienia />
+
+    <br></br> <br></br> // ZADANIA 09 <br></br> <br></br>
 
     <StudentProvider>
       <StudentInfo />
@@ -64,7 +76,7 @@ function App() {
 
     <PrzyciskZapisz /> <br></br> <br></br>
  
-    <InfoUczen imie="Kasia Nowak" czyObecny={false} numerDziennika={5} /> <br></br> <br></br>
+    <InfoUczen imie = "Kasia Nowak" czyObecny={false} numerDziennika={5} /> <br></br> <br></br>
 
     <PanelLogowania />  <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
 

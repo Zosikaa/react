@@ -56,21 +56,8 @@ function ListaObecnosci() {
 				
 			<p> Obecnych: {obecni} / {uczniowie.length} </p>
 
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
-			<br></br>	
-			<br></br>
 			
+
 		</div>
 	);
 }

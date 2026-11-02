@@ -18,6 +18,8 @@ import {MovieList} from './03_zadanie-3'
 import TrybKoloru from './04_ZmianaKolor'
 import OcenyUcznia from './04_Oceny'
 import ListaObecnosci from './04_SrednieObecnosci'
+import PrzelacznikWidoku from './04_hookuseToggle'
+import LicznikObecnosci_1 from './04_hookuseCounter'
 
 import PrzykladTablicaPusta from './06_test'
 import ZegarCyfrowy from './06_Zegar'
@@ -98,7 +100,12 @@ function App() {
 
     <OcenyUcznia />
 
-    <ListaObecnosci />
+    <ListaObecnosci /> <br></br>
+
+    <PrzelacznikWidoku /> <br></br>
+
+    <LicznikObecnosci_1 /> <br></br> 
+    
 
     // PRZYKLADY HOOK 04 <br></br> <br></br>
 

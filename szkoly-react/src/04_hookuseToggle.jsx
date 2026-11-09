@@ -39,7 +39,7 @@ function PrzelacznikWidoku() {
                 <div>
                     <h3>Szczegóły ucznia</h3>
                     <p>Imię: Zofia</p>
-                    <p>Nazwisko: Bielińska</p>
+                    <p>Nazwisko: Biel</p>
                     <p>Wiek: 16</p>
                 </div>
             )}

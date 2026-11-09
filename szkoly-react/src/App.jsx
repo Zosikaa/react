@@ -20,6 +20,8 @@ import OcenyUcznia from './04_Oceny'
 import ListaObecnosci from './04_SrednieObecnosci'
 import PrzelacznikWidoku from './04_hookuseToggle'
 import LicznikObecnosci_1 from './04_hookuseCounter'
+import WyszukiwarkaUczniow from './04_hookuseDebounce'
+import HistoriaOcen from './04_hookusePrevious'
 
 import PrzykladTablicaPusta from './06_test'
 import ZegarCyfrowy from './06_Zegar'
@@ -41,11 +43,30 @@ import FormularzImienia from './10_FormImienia'
 import SystemZarzadzaniaSzkola from './10_FormDlaSysSzkoly'
 import RejestracjaUcznia from './10_RejestracjaWalidacja'
 
+import Kwadraty from './12_przykladKwadrat'
+import PrzykladMemo from './12p-react-memo_useCallback_useMemo'
+
+import Licznik from './12_licznik'
+import Listy from './12_lista_zadan'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    
     <>
+
+    // ZADANIA 12 <br></br> <br></br>
+
+    <Listy />
+
+    <Licznik />
+
+    // PRZYKLADY 12 <br></br> <br></br>
+
+    <Kwadraty />
+
+    <PrzykladMemo />
 
     // ZADANIA 10 <br></br> <br></br>
 
@@ -105,6 +126,10 @@ function App() {
     <PrzelacznikWidoku /> <br></br>
 
     <LicznikObecnosci_1 /> <br></br> 
+
+    <WyszukiwarkaUczniow /> <br></br> 
+
+    <HistoriaOcen /> <br></br> <br></br>
     
 
     // PRZYKLADY HOOK 04 <br></br> <br></br>
@@ -130,6 +155,12 @@ function App() {
     <Zadanie />
     
     <MojPierwszykomponent />
+
+
+
+
+
+
 
       <section id="center">
         <div className="hero">

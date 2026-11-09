@@ -31,5 +31,10 @@
 		"react-router-dom": "^7.18.3",
 		"redis": "^6.2.1",
 		"redux": "^5.0.1"
+	},
+	"scripts": {
+		"www": "node www.js --watch",
+		"api": "node api.js --watch",
+		"all": "node index.js --watch"
 	}
 }

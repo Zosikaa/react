@@ -49,12 +49,21 @@ import PrzykladMemo from './12p-react-memo_useCallback_useMemo'
 import Licznik from './12_licznik'
 import Listy from './12_lista_zadan'
 
+import Widoki_i_nawigacja from './13_Widoki_nawigacja'
+import Trasa_z_parametrem from './13_Tarasa_parametr'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     
     <>
+
+    // ZADANIA 13 <br></br> <br></br>
+
+    <Widoki_i_nawigacja /> <br></br>
+
+    <Trasa_z_parametrem /> <br></br>
 
     // ZADANIA 12 <br></br> <br></br>
 
